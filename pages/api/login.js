@@ -21,7 +21,7 @@ export default async (req,res)=>{
                 expiresIn:"7d"
             })
             const {name,role,email} = user
-            res.status(201).json({token,user:{name,role,email}})
+            res.status(201).json({message:"Login Success!",token,user:{name,role,email}})
         }else{
            return res.status(401).json({error:"Email/Password is incorrect!"})
         }
