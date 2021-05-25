@@ -32,7 +32,7 @@ const Signup = ()=>{
   }
     return(
       <div className="container card authcard center-align">
-        <h3>SignUP</h3>
+        <h3>SIGN UP</h3>
         <form onSubmit={(e)=>userSignup(e)}>
           <input type="text" placeholder="Name"
           value={name}
